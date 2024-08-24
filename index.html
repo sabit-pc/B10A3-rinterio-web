@@ -17,10 +17,10 @@
     />
   </head>
   <body class="font-sans">
-    <header class="m-auto mt-8 w-10/12">
-      <nav class="flex items-center justify-between">
+    <header class="m-auto w-10/12">
+      <nav class="flex items-center justify-between pt-8">
         <!-- logo div -->
-        <div class="flex items-center gap-1">
+        <div class="flex items-center justify-center gap-1">
           <div class="relative h-8 w-8 rounded-full bg-lime-300">
             <img
               src="assets/icon.svg"
@@ -146,25 +146,33 @@
     </header>
 
     <!-- banner section -->
-    <div class="m-auto mt-8 w-10/12">
-      <img src="assets/banner.png" alt="" class="px-4" />
-      <h2 class="text-center text-2xl font-extrabold tracking-normal">
-        A barn house of this <br />
-        design has a striking <br />
-        appearance
+    <div
+      class="m-auto flex w-10/12 flex-col items-center justify-center md:mt-10"
+    >
+      <div class="mb-5 w-64 px-10 md:w-[424px] lg:w-[571px]">
+        <img src="assets/banner.png" alt="" class="w-full" />
+      </div>
+      <h2
+        class="xs:text-3xl mb-5 text-center text-2xl font-extraBold tracking-normal md:text-4xl lg:w-3/4 lg:text-6xl"
+      >
+        A barn house of this design has a striking appearance
       </h2>
-      <p>
+      <p
+        class="mb-6 text-center text-sm text-zinc-700 md:w-4/5 md:text-base lg:mb-8 lg:w-4/6"
+      >
         The barn house captivates with its blend of rustic charm and modern
         sophistication, featuring weathered wood, sleek metal accents, and large
         windows that flood the space with natural light.
       </p>
-      <button>
-        <p>View Details</p>
+      <button
+        class="btn flex h-12 w-full items-center justify-center rounded-[32px] border border-lime-400 bg-lime-300 bg-opacity-50 px-6 py-2 hover:bg-lime-300 md:w-52 md:px-0 md:py-0"
+      >
+        <p class="text-xl font-bold">View Details</p>
         <div class="relative h-8 w-8 rounded-full bg-lime-300">
           <img
             src="assets/icon.svg"
             alt=""
-            class="absolute inset-0 m-auto size-4"
+            class="absolute inset-0 m-auto size-3"
           />
         </div>
       </button>

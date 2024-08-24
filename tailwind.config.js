@@ -10,6 +10,7 @@ module.exports = {
         extraBold: '900',
       },
       screens: {
+        xs: '330px',
         sm: '576px',
         md: '768px',
         lg: '992px',
@@ -22,6 +23,6 @@ module.exports = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["light", "dark"],
+    themes: ["light", "dark",],
   },
 };
