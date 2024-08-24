@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,167 @@
 
     <!-- linking to output css file -->
     <link rel="stylesheet" href="output/output.css" />
+
+    <!-- linking google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body class="font-sans">
+    <header class="m-auto mt-8 w-10/12">
+      <nav class="flex items-center justify-between">
+        <!-- logo div -->
+        <div class="flex items-center gap-1">
+          <div class="relative h-8 w-8 rounded-full bg-lime-300">
+            <img
+              src="assets/icon.svg"
+              alt=""
+              class="absolute inset-0 m-auto size-4"
+            />
+          </div>
+
+          <p class="text-3xl font-extraBold">Rinterio</p>
+        </div>
+
+        <div class="hidden md:hidden lg:block xl:block xxl:block">
+          <!-- menu -->
+          <ul
+            class="menu menu-vertical rounded-box font-normal lg:menu-horizontal"
+          >
+            <li><a class="font-extrabold">Home</a></li>
+            <li><a class="text-neutral-500">Services</a></li>
+            <li><a class="text-neutral-500">Portfolio</a></li>
+            <li><a class="text-neutral-500">Blogs</a></li>
+            <li><a class="text-neutral-500">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="flex gap-4">
+          <!-- search icon -->
+          <div class="dropdown dropdown-end hidden md:block">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn h-12 w-12 rounded-full bg-white p-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- shop icon -->
+          <div class="dropdown dropdown-end hidden md:block">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn h-12 w-12 rounded-full bg-white p-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-- confirmation button -->
+          <div class="hidden md:block">
+            <button
+              class="btn flex items-center justify-center rounded-[32px] bg-lime-300 px-5 py-2 hover:bg-lime-100"
+            >
+              <p class="text-base font-extrabold">Book Consult</p>
+              <div class="relative h-7 w-7 rounded-full bg-black">
+                <img
+                  src="assets/icon2.svg"
+                  alt=""
+                  class="absolute inset-0 m-auto size-3"
+                />
+              </div>
+            </button>
+          </div>
+
+          <!-- hamburger menu -->
+          <div
+            class="dropdown dropdown-end md:block lg:hidden xl:hidden xxl:hidden"
+          >
+            <div
+              tabindex="0"
+              role="button"
+              class="btn h-12 w-12 rounded-full bg-white p-0"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- banner section -->
+    <div class="m-auto mt-8 w-10/12">
+      <img src="assets/banner.png" alt="" class="px-4" />
+      <h2 class="text-center text-2xl font-extrabold tracking-normal">
+        A barn house of this <br />
+        design has a striking <br />
+        appearance
+      </h2>
+      <p>
+        The barn house captivates with its blend of rustic charm and modern
+        sophistication, featuring weathered wood, sleek metal accents, and large
+        windows that flood the space with natural light.
+      </p>
+      <button>
+        <p>View Details</p>
+        <div class="relative h-8 w-8 rounded-full bg-lime-300">
+          <img
+            src="assets/icon.svg"
+            alt=""
+            class="absolute inset-0 m-auto size-4"
+          />
+        </div>
+      </button>
+    </div>
+  </body>
 </html>
