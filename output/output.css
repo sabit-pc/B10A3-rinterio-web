@@ -8519,24 +8519,8 @@ html:has(.drawer-open.drawer-open) {
   inset-inline-start: 0.25rem;
 }
 
-.top-14 {
-  top: 3.5rem;
-}
-
 .top-10 {
   top: 2.5rem;
-}
-
-.top-8 {
-  top: 2rem;
-}
-
-.top-7 {
-  top: 1.75rem;
-}
-
-.top-9 {
-  top: 2.25rem;
 }
 
 .isolate {
@@ -8784,6 +8768,10 @@ html:has(.drawer-open.drawer-open) {
 
 .w-32 {
   width: 8rem;
+}
+
+.w-40 {
+  width: 10rem;
 }
 
 .w-52 {
@@ -9822,6 +9810,11 @@ html:has(.drawer-open.drawer-open) {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-amber-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 230 138 / var(--tw-bg-opacity));
+}
+
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -9832,9 +9825,24 @@ html:has(.drawer-open.drawer-open) {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.bg-emerald-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(167 243 208 / var(--tw-bg-opacity));
+}
+
 .bg-lime-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(190 242 100 / var(--tw-bg-opacity));
+}
+
+.bg-pink-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -9981,10 +9989,6 @@ html:has(.drawer-open.drawer-open) {
   padding: 1.5rem;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -10010,28 +10014,21 @@ html:has(.drawer-open.drawer-open) {
   padding-bottom: 0.125rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
 .py-8 {
   padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-8 {
   padding-bottom: 2rem;
 }
 
@@ -10041,14 +10038,6 @@ html:has(.drawer-open.drawer-open) {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-3 {
-  padding-bottom: 0.75rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -10239,6 +10228,11 @@ html:has(.drawer-open.drawer-open) {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -10831,6 +10825,11 @@ html:has(.drawer-open.drawer-open) {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .xs\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 576px) {
@@ -10876,10 +10875,6 @@ html:has(.drawer-open.drawer-open) {
     flex-direction: row;
   }
 
-  .md\:p-1 {
-    padding: 0.25rem;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -10890,26 +10885,6 @@ html:has(.drawer-open.drawer-open) {
     padding-bottom: 0px;
   }
 
-  .md\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .md\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
   .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -10917,14 +10892,6 @@ html:has(.drawer-open.drawer-open) {
 
   .md\:pb-10 {
     padding-bottom: 2.5rem;
-  }
-
-  .md\:pb-1 {
-    padding-bottom: 0.25rem;
-  }
-
-  .md\:pb-5 {
-    padding-bottom: 1.25rem;
   }
 
   .md\:pb-16 {
@@ -11003,6 +10970,10 @@ html:has(.drawer-open.drawer-open) {
     width: 50%;
   }
 
+  .xl\:w-10 {
+    width: 2.5rem;
+  }
+
   .xl\:w-10\/12 {
     width: 83.333333%;
   }
@@ -11011,8 +10982,8 @@ html:has(.drawer-open.drawer-open) {
     width: 75%;
   }
 
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .xl\:w-3\/5 {
+    width: 60%;
   }
 
   .xl\:grid-cols-4 {
@@ -11068,41 +11039,12 @@ html:has(.drawer-open.drawer-open) {
     padding-bottom: 6rem;
   }
 
-  .xl\:py-28 {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-  }
-
-  .xl\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
-  .xl\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .xl\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  .xl\:py-20 {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .xl\:pb-1 {
-    padding-bottom: 0.25rem;
-  }
-
-  .xl\:pb-5 {
-    padding-bottom: 1.25rem;
-  }
-
   .xl\:pb-24 {
     padding-bottom: 6rem;
+  }
+
+  .xl\:text-center {
+    text-align: center;
   }
 
   .xl\:text-start {
