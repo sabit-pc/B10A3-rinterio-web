@@ -11375,8 +11375,8 @@ html:has(.drawer-open.drawer-open) {
     left: 50%;
   }
 
-  .xl\:top-3 {
-    top: 0.75rem;
+  .xl\:top-4 {
+    top: 1rem;
   }
 
   .xl\:top-6 {
@@ -11385,10 +11385,6 @@ html:has(.drawer-open.drawer-open) {
 
   .xl\:top-\[585px\] {
     top: 585px;
-  }
-
-  .xl\:top-4 {
-    top: 1rem;
   }
 
   .xl\:m-auto {
