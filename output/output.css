@@ -8874,6 +8874,14 @@ html:has(.drawer-open.drawer-open) {
   width: 100%;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .max-w-\[1500px\] {
   max-width: 1500px;
 }
@@ -11059,6 +11067,10 @@ html:has(.drawer-open.drawer-open) {
     width: 460px;
   }
 
+  .sm\:w-44 {
+    width: 11rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -11155,6 +11167,10 @@ html:has(.drawer-open.drawer-open) {
 
   .md\:w-\[630px\] {
     width: 630px;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
   }
 
   .md\:grid-cols-2 {
