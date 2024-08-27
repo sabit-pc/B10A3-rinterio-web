@@ -24,131 +24,135 @@
     />
   </head>
   <body class="m-auto font-sans">
-    <header class="m-auto w-10/12 max-w-[1500px] bg-white">
-      <nav class="flex items-center justify-between pt-8">
-        <!-- logo div -->
-        <div class="flex items-center justify-center gap-1">
-          <div class="relative h-8 w-8 rounded-full bg-lime-300">
-            <img
-              src="assets/icon.svg"
-              alt=""
-              class="absolute inset-0 m-auto size-4"
-            />
-          </div>
-
-          <p class="pl-1 text-3xl font-extraBold">Rinterio</p>
-        </div>
-
-        <div class="hidden md:hidden lg:block xl:block xxl:block">
-          <!-- menu -->
-          <ul
-            class="menu menu-vertical rounded-box font-normal lg:menu-horizontal"
-          >
-            <li><a class="font-extrabold">Home</a></li>
-            <li><a class="text-neutral-500">Services</a></li>
-            <li><a class="text-neutral-500">Portfolio</a></li>
-            <li><a class="text-neutral-500">Blogs</a></li>
-            <li><a class="text-neutral-500">Contact Us</a></li>
-          </ul>
-        </div>
-
-        <div class="flex gap-4 lg:gap-2 xl:gap-4">
-          <!-- search icon -->
-          <div class="dropdown dropdown-end hidden md:block">
-            <div
-              tabindex="0"
-              role="button"
-              class="btn h-12 w-12 rounded-full bg-white p-0"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="size-6"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+    <header class="m-auto w-full max-w-[1500px] bg-white">
+      <nav class="fixed left-0 top-0 z-50 w-full bg-white">
+        <div
+          class="m-auto flex w-10/12 max-w-[1500px] items-center justify-between py-5"
+        >
+          <!-- logo div -->
+          <div class="flex cursor-pointer items-center justify-center gap-1">
+            <div class="relative h-8 w-8 rounded-full bg-lime-300">
+              <img
+                src="assets/icon.svg"
+                alt=""
+                class="absolute inset-0 m-auto size-4"
+              />
             </div>
+
+            <p class="pl-1 text-3xl font-extraBold">Rinterio</p>
           </div>
 
-          <!-- shop icon -->
-          <div class="dropdown dropdown-end hidden md:block">
-            <div
-              tabindex="0"
-              role="button"
-              class="btn h-12 w-12 rounded-full bg-white p-0"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                />
-              </svg>
-            </div>
-          </div>
-
-          <!-- confirmation button -->
-          <div class="hidden md:block">
-            <button
-              class="btn flex items-center justify-center rounded-[32px] bg-lime-300 px-5 py-2 hover:bg-lime-100 lg:px-4 xl:px-5"
-            >
-              <p class="text-base font-extrabold lg:text-sm xl:text-base">
-                Book Consult
-              </p>
-              <div class="relative h-7 w-7 rounded-full bg-black">
-                <img
-                  src="assets/icon2.svg"
-                  alt=""
-                  class="absolute inset-0 m-auto size-3"
-                />
-              </div>
-            </button>
-          </div>
-
-          <!-- hamburger menu -->
-          <div
-            class="dropdown dropdown-end md:block lg:hidden xl:hidden xxl:hidden"
-          >
-            <div
-              tabindex="0"
-              role="button"
-              class="btn h-12 w-12 rounded-full border border-neutral-200 bg-white p-0"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                class="size-6"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </div>
+          <div class="hidden md:hidden lg:block xl:block xxl:block">
+            <!-- menu -->
             <ul
-              tabindex="0"
-              class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
+              class="menu menu-vertical rounded-box font-normal lg:menu-horizontal"
             >
-              <li><a>Home</a></li>
-              <li><a>Services</a></li>
-              <li><a>Portfolio</a></li>
-              <li><a>Blogs</a></li>
-              <li><a>Contact Us</a></li>
+              <li><a class="font-extrabold">Home</a></li>
+              <li><a class="text-neutral-500">Services</a></li>
+              <li><a class="text-neutral-500">Portfolio</a></li>
+              <li><a class="text-neutral-500">Blogs</a></li>
+              <li><a class="text-neutral-500">Contact Us</a></li>
             </ul>
+          </div>
+
+          <div class="flex gap-4 lg:gap-2 xl:gap-4">
+            <!-- search icon -->
+            <div class="dropdown dropdown-end hidden md:block">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn h-12 w-12 rounded-full bg-white p-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- shop icon -->
+            <div class="dropdown dropdown-end hidden md:block">
+              <div
+                tabindex="0"
+                role="button"
+                class="btn h-12 w-12 rounded-full bg-white p-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <!-- confirmation button -->
+            <div class="hidden md:block">
+              <button
+                class="btn flex cursor-pointer items-center justify-center rounded-[32px] bg-lime-300 px-5 py-2 hover:bg-lime-100 lg:px-4 xl:px-5"
+              >
+                <p class="text-base font-extrabold lg:text-sm xl:text-base">
+                  Book Consult
+                </p>
+                <div class="relative h-7 w-7 rounded-full bg-black">
+                  <img
+                    src="assets/icon2.svg"
+                    alt=""
+                    class="absolute inset-0 m-auto size-3"
+                  />
+                </div>
+              </button>
+            </div>
+
+            <!-- hamburger menu -->
+            <div
+              class="dropdown dropdown-end md:block lg:hidden xl:hidden xxl:hidden"
+            >
+              <div
+                tabindex="0"
+                role="button"
+                class="btn h-12 w-12 rounded-full border border-neutral-200 bg-white p-0"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -157,9 +161,9 @@
     <main>
       <!-- banner section -->
       <div
-        class="m-auto flex w-10/12 flex-col items-center justify-center pt-4 md:mt-10 md:pb-10"
+        class="m-auto flex w-10/12 flex-col items-center justify-center pt-24 md:mt-5 md:pb-10"
       >
-        <div class="mb-5 w-full px-5 md:w-[424px] lg:w-[571px]">
+        <div class="mb-3 w-full px-5 md:w-[424px] lg:w-[571px]">
           <img src="assets/banner.png" alt="" class="w-full" />
         </div>
         <h2
@@ -175,7 +179,7 @@
           large windows that flood the space with natural light.
         </p>
         <button
-          class="btn flex h-12 w-full items-center justify-center rounded-[32px] border border-lime-400 bg-lime-300 bg-opacity-50 px-6 py-2 hover:bg-lime-300 md:w-52 md:px-0 md:py-0"
+          class="btn flex h-12 w-full cursor-pointer items-center justify-center rounded-[32px] border border-lime-400 bg-lime-300 bg-opacity-50 px-6 py-2 hover:bg-lime-300 md:w-52 md:px-0 md:py-0"
         >
           <p class="text-xl font-bold">View Details</p>
           <div class="relative h-8 w-8 rounded-full bg-lime-300">
@@ -203,7 +207,7 @@
               class="m-auto flex w-10/12 flex-col items-center justify-center gap-4 xl:h-[545px] xl:w-1/2 xl:items-baseline xl:justify-evenly xl:gap-8"
             >
               <button
-                class="flex w-32 items-center justify-center gap-2 rounded-3xl border bg-white py-0.5 drop-shadow-sm"
+                class="flex w-32 cursor-pointer items-center justify-center gap-2 rounded-3xl border bg-white py-0.5 drop-shadow-sm"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -358,7 +362,7 @@
             class="m-auto flex w-10/12 flex-col items-center justify-center gap-4 pb-6"
           >
             <button
-              class="flex w-40 items-center justify-center gap-2 rounded-3xl border bg-white py-0.5 drop-shadow-sm"
+              class="flex w-40 cursor-pointer items-center justify-center gap-2 rounded-3xl border bg-white py-0.5 drop-shadow-sm"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -489,7 +493,7 @@
           class="m-auto flex w-10/12 flex-col items-center justify-center gap-4 pb-6"
         >
           <button
-            class="flex w-56 items-center justify-center gap-2 rounded-3xl border bg-white py-0.5 drop-shadow-sm"
+            class="flex w-56 cursor-pointer items-center justify-center gap-2 rounded-3xl border bg-white py-0.5 drop-shadow-sm"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -530,14 +534,14 @@
             <figure class="p-4">
               <img
                 src="assets/img1.png"
-                alt="Shoes"
+                alt=""
                 class="w-full rounded-xl md:h-[155px] md:w-[220px]"
               />
             </figure>
             <div
-              class="px-6 py-2 md:absolute md:left-[255px] md:top-3 md:px-0 lg:top-0 xl:top-6"
+              class="px-6 py-2 md:absolute md:left-[255px] md:top-3 md:px-0 lg:top-0 xl:top-4"
             >
-              <h2 class="text-xl font-extrabold md:pb-2">Commercial</h2>
+              <h2 class="text-xl pb-2 font-extrabold md:pb-2">Commercial</h2>
               <p
                 class="text-justify text-base font-medium text-neutral-500 md:pr-5 xl:pr-8"
               >
@@ -545,9 +549,9 @@
                 modern. The barn house captivates with its blend of rustic charm
                 and modern.
               </p>
-              <div class="card-actions">
+              <div class="card-actions pt-2">
                 <button
-                  class="flex h-12 items-center justify-start gap-2 hover:bg-lime-300"
+                  class="flex h-12 cursor-pointer items-center justify-start gap-2 hover:bg-lime-300"
                 >
                   <p class="text-base font-bold">View Details</p>
                   <div class="relative h-8 w-8 rounded-full bg-lime-300">
@@ -599,16 +603,16 @@
             <div
               class="px-6 py-2 md:absolute md:left-[255px] md:top-5 md:px-0 lg:top-3 xl:top-6"
             >
-              <h2 class="text-xl font-extrabold md:pb-2">Commercial</h2>
+              <h2 class="text-xl pb-2 font-extrabold md:pb-2">Commercial</h2>
               <p
                 class="text-justify text-base font-medium text-neutral-500 md:pr-5 xl:pr-7"
               >
                 The barn house captivates with its blend of rustic charm and
                 modern.
               </p>
-              <div class="card-actions">
+              <div class="card-actions pt-2">
                 <button
-                  class="flex h-12 items-center justify-start gap-2 hover:bg-lime-300"
+                  class="flex h-12 cursor-pointer items-center justify-start gap-2 hover:bg-lime-300"
                 >
                   <p class="text-base font-bold">View Details</p>
                   <div class="relative h-8 w-8 rounded-full bg-lime-300">
@@ -649,6 +653,123 @@
         </div>
       </div>
 
+      <!-- unique section -->
+      <div class="relative bg-zinc-100">
+        <div class="m-auto max-w-[1500px] pb-14 pt-6 md:pt-16">
+          <div
+            class="m-auto flex w-10/12 flex-col items-center justify-center gap-4 pb-6"
+          >
+            <button
+              class="flex w-40 cursor-pointer items-center justify-center gap-2 rounded-3xl border bg-lime-100 py-0.5 drop-shadow-sm"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="size-5"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+
+              <p class="text-base font-bold">Click for more</p>
+            </button>
+
+            <p
+              class="text-center text-2xl font-extraBold md:text-3xl xl:text-center xl:text-5xl"
+            >
+              See our magic unfold—slide to reveal!
+            </p>
+
+            <p
+              class="text-center text-sm text-zinc-700 xl:w-3/5 xl:text-center xl:text-base xl:font-medium"
+            >
+              Rinterio transforms outdated spaces into modern masterpieces. Our
+              Before & After Showcase reveals the impact of expert design and
+              craftsmanship.
+            </p>
+          </div>
+
+          <div
+            class="absolute left-10 top-2/3 z-10 -translate-x-1/2 -translate-y-1/2 transform md:left-28 md:top-2/3 xl:left-1/2 xl:top-[585px] xxl:top-[635px]"
+          >
+            <img
+              src="assets/animatelogo1.png"
+              alt=""
+              class="h-40 w-40 animate-spin-slow"
+            />
+          </div>
+          <img
+            src="assets/animatelogo2.png"
+            alt=""
+            class="absolute left-10 top-2/3 z-20 h-[72px] w-[72px] -translate-x-1/2 -translate-y-1/2 transform md:left-28 md:top-2/3 xl:left-1/2 xl:top-[585px] xxl:top-[635px]"
+          />
+
+          <div class="m-auto flex w-10/12 flex-col gap-6 xl:flex-row">
+            <div class="m-auto flex flex-col items-center gap-6">
+              <p class="text-base font-extrabold lg:text-xl xl:text-2xl">
+                Exterior
+              </p>
+              <div
+                class="diff aspect-[16/9] w-[260px] rounded-xl border-2 border-lime-300 xs:w-[310px] sm:w-[460px] md:w-[630px] lg:w-[805px] xl:w-[485px] xxl:w-[580px]"
+              >
+                <div class="diff-item-1">
+                  <img alt="daisy" src="assets/after.jpg" />
+                </div>
+                <div class="diff-item-2">
+                  <img alt="daisy" src="assets/before.jpg" />
+                </div>
+                <div class="diff-resizer"></div>
+              </div>
+
+              <div
+                class="diff aspect-[16/9] w-[260px] rounded-xl border-2 border-lime-300 xs:w-[310px] sm:w-[460px] md:w-[630px] lg:w-[805px] xl:w-[485px] xxl:w-[580px]"
+              >
+                <div class="diff-item-1">
+                  <img alt="daisy" src="assets/after2.jpg" />
+                </div>
+                <div class="diff-item-2">
+                  <img alt="daisy" src="assets/before2.jpg" />
+                </div>
+                <div class="diff-resizer"></div>
+              </div>
+            </div>
+
+            <div class="m-auto flex flex-col items-center gap-6">
+              <p class="text-base font-extrabold lg:text-xl xl:text-2xl">
+                Interior
+              </p>
+              <div
+                class="diff aspect-[16/9] w-[260px] rounded-xl border-2 border-lime-300 xs:w-[310px] sm:w-[460px] md:w-[630px] lg:w-[805px] xl:w-[485px] xxl:w-[580px]"
+              >
+                <div class="diff-item-1">
+                  <img alt="daisy" src="assets/after3.jpg" />
+                </div>
+                <div class="diff-item-2">
+                  <img alt="daisy" src="assets/before3.jpg" />
+                </div>
+                <div class="diff-resizer"></div>
+              </div>
+
+              <div
+                class="diff aspect-[16/9] w-[260px] rounded-xl border-2 border-lime-300 xs:w-[310px] sm:w-[460px] md:w-[630px] lg:w-[805px] xl:w-[485px] xxl:w-[580px]"
+              >
+                <div class="diff-item-1">
+                  <img alt="daisy" src="assets/after4.jpg" />
+                </div>
+                <div class="diff-item-2">
+                  <img alt="daisy" src="assets/before4.jpg" />
+                </div>
+                <div class="diff-resizer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- rinterio news section -->
       <div class="bg-zinc-100">
         <div class="m-auto max-w-[1500px] pb-8 md:pb-16 lg:py-20">
@@ -656,7 +777,7 @@
             class="m-auto flex w-10/12 flex-col items-center justify-center gap-4 pb-6"
           >
             <button
-              class="flex w-40 items-center justify-center gap-2 rounded-3xl border bg-lime-100 py-0.5 drop-shadow-sm"
+              class="flex w-40 cursor-pointer items-center justify-center gap-2 rounded-3xl border bg-lime-100 py-0.5 drop-shadow-sm"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -747,7 +868,7 @@
                 </p>
                 <div>
                   <button
-                    class="flex h-12 items-center justify-start gap-2 hover:bg-lime-300"
+                    class="flex h-12 cursor-pointer items-center justify-start gap-2 hover:bg-lime-300"
                   >
                     <p class="text-base font-bold">Read More</p>
                     <div class="relative h-8 w-8 rounded-full bg-lime-300">
@@ -819,7 +940,7 @@
                 </p>
                 <div>
                   <button
-                    class="flex h-12 items-center justify-start gap-2 hover:bg-lime-300"
+                    class="flex h-12 cursor-pointer items-center justify-start gap-2 hover:bg-lime-300"
                   >
                     <p class="text-base font-bold">Read More</p>
                     <div class="relative h-8 w-8 rounded-full bg-lime-300">
@@ -891,7 +1012,7 @@
                 </p>
                 <div>
                   <button
-                    class="flex h-12 items-center justify-start gap-2 hover:bg-lime-300"
+                    class="flex h-12 cursor-pointer items-center justify-start gap-2 hover:bg-lime-300"
                   >
                     <p class="text-base font-bold">Read More</p>
                     <div class="relative h-8 w-8 rounded-full bg-lime-300">
@@ -990,7 +1111,7 @@
 
           <div class="w-10/12 md:w-3/5">
             <button
-              class="btn flex w-full items-center justify-center rounded-3xl border-none bg-lime-300 px-5 py-2 hover:bg-lime-100"
+              class="btn flex w-full cursor-pointer items-center justify-center rounded-3xl border-none bg-lime-300 px-5 py-2 hover:bg-lime-100"
             >
               <p class="text-base font-extrabold">Send Mail</p>
               <div class="relative h-6 w-6 rounded-full bg-black">
@@ -1009,7 +1130,7 @@
       <div class="bg-zinc-900 py-14 md:py-28">
         <div class="m-auto flex max-w-[1500px] flex-col gap-4">
           <!-- logo div -->
-          <div class="flex items-center justify-center gap-1">
+          <div class="flex cursor-pointer items-center justify-center gap-1">
             <div class="relative h-8 w-8 rounded-full bg-lime-300">
               <img
                 src="assets/icon.svg"
@@ -1029,7 +1150,7 @@
           </p>
 
           <ul
-            class="menu menu-vertical m-auto flex flex-col items-center gap-3 rounded-box text-base font-medium lg:menu-horizontal md:flex-row md:gap-10"
+            class="menu menu-vertical m-auto flex cursor-pointer flex-col items-center gap-3 rounded-box text-base font-medium lg:menu-horizontal md:flex-row md:gap-10"
           >
             <li><a class="text-neutral-400">Home</a></li>
             <li><a class="text-neutral-400">Services</a></li>
@@ -1039,7 +1160,7 @@
           </ul>
 
           <button
-            class="btn m-auto flex w-44 items-center justify-center rounded-[32px] border-none bg-lime-300 px-5 py-2 hover:bg-lime-100"
+            class="btn m-auto flex w-44 cursor-pointer items-center justify-center rounded-[32px] border-none bg-lime-300 px-5 py-2 hover:bg-lime-100"
           >
             <p class="text-base font-extrabold">Book Consult</p>
             <div class="relative h-7 w-7 rounded-full bg-black">
